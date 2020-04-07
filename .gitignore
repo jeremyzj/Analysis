@@ -68,3 +68,4 @@ compile_commands.json
 oclint_report.html
 xcodebuild.log
 Package.resolved
+*.xcuserstate
