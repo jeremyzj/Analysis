@@ -1,0 +1,22 @@
+{
+  "name": "Analysis",
+  "version": "0.1.0",
+  "summary": "A short description of Analysis.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jackincitibank@gmail.com/Analysis",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jackincitibank@gmail.com": "zhangjian@createcloud.com"
+  },
+  "source": {
+    "git": "https://github.com/jackincitibank@gmail.com/Analysis.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Analysis/Classes/**/*"
+}

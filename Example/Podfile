@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Analysis_Tests' do
+  pod 'Analysis', :path => '../'
+  
+  
+end

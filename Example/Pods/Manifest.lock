@@ -1,0 +1,16 @@
+PODS:
+  - Analysis (0.1.0)
+
+DEPENDENCIES:
+  - Analysis (from `../`)
+
+EXTERNAL SOURCES:
+  Analysis:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Analysis: 4a656b53f6f1e45aa85064535b1e987afa69efe4
+
+PODFILE CHECKSUM: 1c895f9415a752d340d2823eddf362a96b6f6cfd
+
+COCOAPODS: 1.7.1
