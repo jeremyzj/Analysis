@@ -26,6 +26,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         _sharedInstance = [[self alloc] init];
+        [_sharedInstance loadManager];
     });
     return _sharedInstance;
 }
@@ -45,7 +46,6 @@
 
 
 - (void)loadManager {
-    self.saveQueue = dispatch_queue_create("com.analysis.queue", DISPATCH_QUEUE_SERIAL);
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(appWillEnterForegroundAction:) name:UIApplicationWillEnterForegroundNotification
                                                object:nil];
@@ -71,9 +71,9 @@
                                                object:nil];
     
     
-    
+    self.saveQueue = dispatch_queue_create("com.analysis.queue", DISPATCH_QUEUE_SERIAL);
     __weak typeof(self) weakSelf = self;
-    dispatch_sync(self.saveQueue, ^{
+    dispatch_async(self.saveQueue, ^{
         weakSelf.fileManager = [NSFileManager new];
         
         NSArray<NSString *> *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -159,6 +159,9 @@
 
 
 - (void)saveAction: (AnalysisModel* )data {
+    if (self.saveQueue == nil) {
+        return;
+    }
     __weak typeof(self) weakSelf = self;
     dispatch_async(self.saveQueue, ^{
         NSString *analysis = [NSString stringWithFormat:@"\r\n%f,%@,%@,%@", data.actionTime, data.actionId, data.actionType, data.remarks];

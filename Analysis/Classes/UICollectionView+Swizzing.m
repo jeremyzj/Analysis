@@ -9,6 +9,7 @@
 #import "UICollectionView+Swizzing.h"
 #import "MethodSwizzing.h"
 #import "AnalysisMananger.h"
+#import <objc/runtime.h>
 
 @implementation UICollectionView(Swizzing)
 

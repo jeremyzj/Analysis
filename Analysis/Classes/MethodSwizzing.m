@@ -7,6 +7,7 @@
 //
 
 #import "MethodSwizzing.h"
+#import <objc/runtime.h>
 
 @implementation MethodSwizzing
 

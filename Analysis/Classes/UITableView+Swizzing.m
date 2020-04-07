@@ -9,6 +9,7 @@
 #import "UITableView+Swizzing.h"
 #import "MethodSwizzing.h"
 #import "AnalysisMananger.h"
+#import <objc/runtime.h>
 
 @implementation UITableView(Swizzing)
 

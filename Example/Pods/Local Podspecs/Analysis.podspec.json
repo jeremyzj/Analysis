@@ -1,9 +1,8 @@
 {
   "name": "Analysis",
   "version": "0.1.0",
-  "summary": "A short description of Analysis.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/jackincitibank@gmail.com/Analysis",
+  "summary": "APP of Analysis.",
+  "homepage": "https://github.com/jeremyzj/Analysis",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +11,24 @@
     "jackincitibank@gmail.com": "zhangjian@createcloud.com"
   },
   "source": {
-    "git": "https://github.com/jackincitibank@gmail.com/Analysis.git",
+    "git": "https://github.com/jeremyzj/Analysis",
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "10.0"
   },
-  "source_files": "Analysis/Classes/**/*"
+  "source_files": "Analysis/Classes/*.{h,m}",
+  "public_header_files": "Analysis/Classes/*.h",
+  "requires_arc": true,
+  "libraries": [
+    "z",
+    "c++"
+  ],
+  "xcconfig": {
+    "GCC_ENABLE_CPP_EXCEPTIONS": "YES"
+  },
+  "frameworks": [
+    "UIKit",
+    "Foundation"
+  ]
 }
