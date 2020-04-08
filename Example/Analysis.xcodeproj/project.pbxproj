@@ -16,6 +16,7 @@
 		101E84D0243C52D000FEA595 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 101E84CF243C52D000FEA595 /* main.m */; };
 		101E84DA243C52D000FEA595 /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 101E84D9243C52D000FEA595 /* ExampleTests.m */; };
 		101E84E5243C52D000FEA595 /* ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 101E84E4243C52D000FEA595 /* ExampleUITests.m */; };
+		101EF8BD243E184A009E36EF /* BHAnalysis.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 101EF8BC243E184A009E36EF /* BHAnalysis.podspec */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -60,6 +61,7 @@
 		101E84E0243C52D000FEA595 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		101E84E4243C52D000FEA595 /* ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleUITests.m; sourceTree = "<group>"; };
 		101E84E6243C52D000FEA595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		101EF8BC243E184A009E36EF /* BHAnalysis.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BHAnalysis.podspec; path = ../BHAnalysis.podspec; sourceTree = "<group>"; };
 		2190A8931C795936FDCE9DEE /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		4BC40603269B90BF8F7294A1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,7 +76,6 @@
 		611182C8B6DDCF3E7B162535 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D32091843572F87D06663AE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E91865F72B94C0F3F08031E3 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FDB9BC011A9CFECB46E2901E /* Analysis.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Analysis.podspec; path = ../Analysis.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,7 +209,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				FDB9BC011A9CFECB46E2901E /* Analysis.podspec */,
+				101EF8BC243E184A009E36EF /* BHAnalysis.podspec */,
 				4BC40603269B90BF8F7294A1 /* README.md */,
 				7D32091843572F87D06663AE /* LICENSE */,
 			);
@@ -382,6 +383,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101EF8BD243E184A009E36EF /* BHAnalysis.podspec in Resources */,
 				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,11 +398,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Analysis/Analysis.framework",
+				"${BUILT_PRODUCTS_DIR}/BHAnalysis/BHAnalysis.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Analysis.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BHAnalysis.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
