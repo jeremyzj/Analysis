@@ -25,6 +25,7 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
+xcuserstate/
 
 ## Obj-C/Swift specific
 *.hmap
@@ -58,12 +59,6 @@ cobertura.xml
 Sentry.framework.zip
 
 # DepTest
-DependencyManagerTests/*/*/Cartfile
-DependencyManagerTests/*/*/Cartfile.resolved
-DependencyManagerTests/*/*/Carthage/
-DependencyManagerTests/*/*/Podfile
-DependencyManagerTests/*/*/Podfile.lock
-DependencyManagerTests/*/*/Pods
 compile_commands.json
 oclint_report.html
 xcodebuild.log
